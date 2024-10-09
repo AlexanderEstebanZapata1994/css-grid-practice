@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: 10px solid rgba(196, 87, 28, 0.688);
+    background-color: rgba(255, 166, 0, 0.419);
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "x1 x2 x2"
+        "x3 x3 x4"
+        "x5 x6 x7";
+    place-content: center;
+    height: 100vh;
+}
+
+.item {
+    font-size: 3rem;
+    border: 2px solid black;
+    display: inherit;
+    place-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-1 {
+    grid-area: x1;
+    background-image: url("https://loremflickr.com/100/75?random=7");
+}
+
+.item-2 {
+    grid-area: x2;
+    background-image: url("https://loremflickr.com/100/75?random=1");
+}
+
+.item-3 {
+    grid-area: x3;
+    background-image: url("https://loremflickr.com/100/75?random=2");
+}
+
+.item-4 {
+    grid-area: x4;
+    background-image: url("https://loremflickr.com/100/75?random=3");
+}
+
+.item-5 {
+    grid-area: x5;
+    background-image: url("https://loremflickr.com/100/75?random=4");
+}
+
+.item-6 {
+    grid-area: x6;
+    background-image: url("https://loremflickr.com/100/75?random=5");
+}
+
+.item-7 {
+    grid-area: x7;
+    background-image: url("https://loremflickr.com/100/75?random=6");
+}

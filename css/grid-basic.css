@@ -1,0 +1,29 @@
+.container {
+    border: 5px solid #31ca39;
+    border-radius: 8px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: max-content;
+}
+
+.item {
+    border: 2px dashed lightgreen;
+    background-color:rgb(111, 188, 110); 
+    font-size: 2rem;
+    position: relative;
+    display: grid;
+}
+span {
+    width: 2rem;
+    height: 2rem;
+    background-color: green;
+    color: white;
+    position: absolute;
+    text-align: center;
+    justify-self: end;
+    align-self: end;
+}
