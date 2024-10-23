@@ -19,24 +19,20 @@ html {
     margin: auto;
     display: grid;
     place-items: center;
-    grid-template-rows: 200px 50px 200px 50px auto;
+    grid-template-rows: 2fr 1fr 200px 50px auto;
 }
 
 .header {
-    display: inherit;
-    grid-template-columns: repeat(2, 155px);
-    grid-template-rows: 220px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-auto-rows: 300px;
 }
 
-.header__left-section {
+.header__info {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.header__right-section {
-    display: grid;
-    place-items: center;
+    padding: 20px;
 }
 
 .header__title {
@@ -64,13 +60,70 @@ html {
 }
 
 .header__image {
-    background-image: url("../img/hero.png");
-    background-size: cover;
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    object-fit: contain;
 }
 
 .title {
     color: gray;
+    margin: 100px 0;
     font-size: 1.8rem;
+    font-weight: lighter;
 }
+
+.main-items {
+    display: inherit;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 77.4px);
+    grid-template-rows: 110px 110px;
+    grid-template-areas: 
+        "video video img1 img2"
+        "video video img3 img4"
+        ;
+}
+
+.item-img {
+    background-size: cover;
+    background-position: 15%;
+    background-repeat: no-repeat;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    object-fit: fill;
+}
+
+
+.footer-items {
+    display: inherit;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: 50px;
+}
+
+.footer-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+}
+
+.footer-item__img-1 {
+    background-image: url("/img/plate1.png");
+}
+
+.footer-item__img-2 {
+    background-image: url("/img/plate2.png");
+}
+
+.footer-item__img-3 {
+    background-image: url("/img/plate3.png");
+}
+
+.footer-item__img-4 {
+    background-image: url("/img/plate4.png");
+}
+
+.footer-item__img-5 {
+    background-image: url("/img/plate5.png");
+};
