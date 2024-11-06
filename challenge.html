@@ -3,37 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location properties</title>
+    <title>CSS Grid project</title>
     <link rel="stylesheet" href="/css/challenge.css">
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <section class="header__left-section">
-                <h1 class="header__title">Check The Best Food</h1>
-                <p class="header__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <section class="header__info">
+                <h1 class="header__title">Check The<br/>Best Food</h1>
+                <p class="header__paragraph">Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Doloremque, aperiam molestiae, 
+                    tempore neque, error alias autem explicabo!</p>
                 <button class="header__button">Book a table</button>
             </section>
-            <section class="header__right-section">
-                <div class="header__image" ></div>
-            </section>
+            <img class="header__image" src="/img/hero.png" />
         </header>
-        <h1 class="title">Our Services</h1>
-        <main class="main-items">
-            <div class="main-item__img-1"></div>
-            <div class="main-item__img-2"></div>
-            <div class="main-item__img-3"></div>
-            <div class="main-item__img-4"></div>
-            <div class="main-item__img-5"></div>
-        </main>
-        <h1 class="title">Home Menu</h1>
-        <footer class="footer-items">
-            <div class="footer-item__img-1"></div>
-            <div class="footer-item__img-2"></div>
-            <div class="footer-item__img-3"></div>
-            <div class="footer-item__img-4"></div>
-            <div class="footer-item__img-5"></div>
-        </footer>
+        <section class="dishes">
+            <h1 class="dishes__title title">Our Services</h1>
+            <div class="dishes__grid">
+                <img alt="plate of food with pasta and vegetables" src="/img/video.png" class="dish__img dish__img--large" />
+                <img alt="plate of food with pasta and vegetables" src="/img/dish1.png" class="dish__img dish__img--small" />
+                <img alt="plate of food with pasta and vegetables" src="/img/dish2.png" class="dish__img dish__img--small" />
+                <img alt="plate of food with pasta and vegetables" src="/img/dish3.png" class="dish__img dish__img--small" />
+                <img alt="plate of food with pasta and vegetables" src="/img/dish4.png" class="dish__img dish__img--small" />
+            </div>
+        </section>
+        <section class="plates">
+            <h1 class="plates__title title">Home Menu</h1>
+            <div class="plates__grid">
+                <div class="plates__img-wrapper"><img alt="plate of food with pasta and vegetables" src="/img/plate1.png" class="plates__img" /> </div>
+                <div class="plates__img-wrapper"><img alt="plate of food with pasta and vegetables" src="/img/plate2.png" class="plates__img" /> </div>
+                <div class="plates__img-wrapper"><img alt="plate of food with pasta and vegetables" src="/img/plate3.png" class="plates__img" /> </div>
+                <div class="plates__img-wrapper"><img alt="plate of food with pasta and vegetables" src="/img/plate4.png" class="plates__img" /> </div>
+                <div class="plates__img-wrapper"><img alt="plate of food with pasta and vegetables" src="/img/plate5.png" class="plates__img" /> </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
